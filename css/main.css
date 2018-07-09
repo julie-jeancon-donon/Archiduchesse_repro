@@ -1,0 +1,424 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+textarea {
+    resize: vertical;
+}
+
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+   h1 {
+     display: none;
+   }
+
+   ul {
+     list-style: none;
+   }
+
+   a{
+     text-decoration: none;
+     color: #4c4c4c;
+   }
+
+body {
+  color: #4c4c4c;
+}
+
+.first_header{
+  font-family: Georgia;
+  background: #f5f5f5;
+}
+
+.second_header_desktop, .second_header_mobile, .color_product, .infos_footer, .contact{
+  font-family: Times,serif;
+  font-style: italic;
+}
+
+
+
+
+
+
+
+/*  ----------- CSS Mobile ----------- */
+
+.top_menu_connexion{
+  display:none;
+}
+  .first_header{
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: 50px;
+
+  }
+
+  .second_header_desktop{
+    display:none;
+  }
+
+.burger{
+  display: flex;
+  width: 20%;
+  height: 50px;
+}
+
+.burger img{
+  width: 30px;
+  height: 30px;
+  margin: auto;
+}
+
+.brand_logo{
+  display:flex;
+  width: 50%;
+  height:50px;
+}
+
+.bran_logo img{
+  margin:auto;
+}
+
+.shop_cart{
+  display:flex;
+  width: 30%;
+  height: 50px;
+}
+.shops{
+  display:none;
+}
+
+.cart{
+  display:flex;
+  width: 40px;
+  height:40px;
+  margin:auto;
+}
+
+.cart p{
+  display:none;
+}
+
+.second_header_mobile{
+  display:flex;
+  border-bottom: 1px solid #f5f5f5;
+  border-top: 1px solid #f5f5f5;
+  width:100%;
+  height:40px;
+}
+
+.second_header_mobile p{
+  margin:auto;
+}
+
+.capsule{
+  padding-left: 10px;
+  padding-right: 10px;
+  display: inline-block;
+}
+
+.capsule img{
+  width: 100%;
+}
+
+.capsule, .p1, .p2, .p3{
+  display:block;
+}
+
+.capsule .p1{
+  padding-top: 7px;
+  color: #444444;
+  margin-top: 12px;
+  height: 25px;
+  background: #e7e7e7;
+  width: 180px;
+  border-radius: 3px;
+  font-family: arial, sans-serif;
+  font-size: 13px;
+  text-align: center;
+}
+
+.capsule .p2{
+  margin-top:12px;
+  color: #444444;
+  font-family: Times;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.capsule .p3{
+  margin-top: 12px;
+  height:30px;
+  border-radius: 3px;
+  width:90px;
+  background: #444444;
+  color: white;
+  font-size: 13px;
+  padding-top:11px;
+
+
+  text-align: center;
+}
+
+/* -----------------------------------
+
+ CSS DESKTOP
+
+.language li {
+  font-size:0.8em;
+}
+
+.active{
+  opacity:1;
+}
+
+.inactive{
+  opacity:0;
+}
+
+.language :hover li{
+  transition: all 0.3s;
+  opacity:1;
+}
+
+ .first_header, .second_header{
+   width: 100%;
+}
+
+header .first_header{
+  background: #f5f5f5;
+  height: 100px;
+  display: flex;
+}
+
+.shops, .cart {
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+}
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+
+
+.hidden {
+    display: none !important;
+}
+
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+
+
+.invisible {
+    visibility: hidden;
+}
+
+
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

@@ -98,7 +98,7 @@ body {
   background: #f5f5f5;
 }
 
-.second_header_desktop, .second_header_mobile, .color_product, .infos_footer, .contact{
+.second_header_desktop, .second_header_mobile, .color_product, .infos_footer, .contact, .follow{
   font-family: Times,serif;
   font-style: italic;
 }
@@ -141,11 +141,13 @@ body {
 .brand_logo{
   display:flex;
   width: 50%;
-  height:50px;
+  height:60px;
 }
 
-.bran_logo img{
+.brand_logo img{
+  height:50px;
   margin:auto;
+  margin-bottom:10px;
 }
 
 .shop_cart{
@@ -224,10 +226,123 @@ body {
   color: white;
   font-size: 13px;
   padding-top:11px;
-
-
   text-align: center;
 }
+
+.bloc_inline{
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bloc_product{
+  width:45%;
+  text-align: center
+}
+
+.bloc_product img{
+  width: 100%;
+}
+
+
+
+.cat_price{
+  display:flex;
+  justify-content: space-around;
+  font-size: 13px;
+}
+
+.categorie{
+  font-family: arial;
+}
+
+.size1 ul, .size2 ul{
+  padding:0px;
+  margin-left: 5px;
+  margin-right:5px;
+}
+
+.product_size{
+  justify-content: center;
+  display: flex;
+}
+
+
+
+.articles{
+  padding: 10px;
+  font-family: times;
+  font-size: 17px;
+  display:block;
+  border-top: 1px solid #e7e7e7;
+
+}
+
+
+
+h2, h3{
+  font-weight: normal;
+  color:#444444;
+  text-align: center;
+  font-size:25px;
+}
+
+.infos_footer{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.icons_footer{
+  width:45%;
+  text-align: center;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons_footer:first-child img{
+  margin-bottom: 40px;
+}
+
+footer{
+  display:block;
+  width:90%;
+  background: #f5f5f5;
+  margin: auto;
+  padding: 20px;
+}
+
+.social_medias ul{
+  display:flex;
+  padding: 0;
+  width: 25%;
+  margin: auto;
+  justify-content: space-around;
+  padding-top:20px;
+}
+
+
+.menu_footer{
+  display:none;
+}
+
+.contact img{
+  display:block;
+  margin: auto;
+}
+
+.contact, .follow{
+  font-style:normal;
+}
+.contact p, .follow {
+  text-align: center;
+}
+
+
+}
+
+
 
 /* -----------------------------------
 

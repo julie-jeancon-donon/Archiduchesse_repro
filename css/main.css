@@ -233,6 +233,7 @@ body {
 
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .bloc_product{
@@ -254,7 +255,17 @@ body {
 
 .categorie{
   font-family: arial;
+  border-right: 1px solid silver;
+  margin-left:55px;
+  padding-right:5px;
 }
+
+.price{
+  margin-right:60px;
+  padding-left: 5px;
+}
+
+
 
 .size1 ul, .size2 ul{
   padding:0px;
@@ -272,7 +283,7 @@ body {
 .articles{
   padding: 10px;
   font-family: times;
-  font-size: 17px;
+  font-size: 20px;
   display:block;
   border-top: 1px solid #e7e7e7;
 
@@ -316,6 +327,7 @@ footer{
 .social_medias ul{
   display:flex;
   padding: 0;
+  min-width: 150px;
   width: 25%;
   margin: auto;
   justify-content: space-around;
@@ -339,8 +351,21 @@ footer{
   text-align: center;
 }
 
-
+.last_footer_mobile{
+  height: 200 px;
 }
+
+.last_footer_mobile ul{
+  display: block;
+  width:100%;
+}
+
+.last_footer_mobile li{
+  font-size: 25px;
+  margin-top: 30px;
+}
+
+
 
 
 
